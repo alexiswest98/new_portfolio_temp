@@ -1,0 +1,104 @@
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    margin-top: 8%;
+}
+
+.contact-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color: pink; */
+}
+
+.linkedin-tag {
+    width: fit-content;
+    height: 100%;
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.linkedin-img {
+    height: 50px;
+    width: 50px;
+}
+
+/* button */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  width: fit-content;
+  height: fit-content;
+}
+
+.button {
+  display: flex;
+  overflow: hidden;
+  border-radius: 0.8rem;
+  width: 9.3rem;
+  height: 2.9rem;
+  background-color: #191970;
+  color: #fcebd7;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.button span {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.3;
+  font-size: 1.2rem;
+  transition: width 0.5s ease-in-out;
+  width: 100%;
+  font-weight: 600;
+}
+
+.button .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28%;
+  background-color: #e8d6ea;
+  transition: width 0.5s ease-in-out;
+  right: 0;
+}
+
+.button .icon .fa {
+  font-size: 20px;
+  vertical-align: middle;
+  font-weight: 400;
+  transition: font-size 0.3s ease-in-out;
+}
+
+.button:hover span {
+  width: 0;
+  padding: 0;
+
+}
+
+.button:hover .icon {
+  width: 100%;
+}
+
+.button:hover .icon .fa {
+  font-size: 30px;
+  transition-delay: 0.2s; /* Delay the transition for smoother effect */
+}
+
+@media (max-width: 600px) {
+    .linkedin-tag {
+        width: 22%;
+    }
+}
