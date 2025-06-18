@@ -74,8 +74,10 @@ const Contact = () => {
         className="md:w-3/5 p-8 rounded-2xl shadow-contact h-full self-center flex flex-col items-center text-center"
       >
         <h3 className={styles.sectionHeadText}>Contact Me</h3>
-        <h3 className={styles.sectionSubText}>Work Email:<br/> alexis.west@mentalhealthsf.org</h3>
-        <h3 className={styles.sectionSubText}>Email: <br/> alexishwest98@gmail.com</h3>
+        {/* <h3 className={styles.sectionSubText}>Work Email:<br/> alexis.west@mentalhealthsf.org</h3> */}
+        <h3 className={styles.sectionSubText}>Email:
+        <a className={styles.sectionSubText} href="mailto:alexishwest98@gmail.com">alexishwest98@gmail.com</a>
+        </h3>
         <Feedbacks></Feedbacks>
       </motion.div>
   
